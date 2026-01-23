@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>异常项目 - SOL</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/png" sizes="64x64" href="assets/icon.png">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <a class="logo">
+                <div class="logo-icon">
+                    <img src="assets/icon.png" class="logo-image">
+                </div>
+                <div class="logo-text-container">
+                    <div class="logo-text">SOL</div>
+                    <div class="logo-subtitle">超常事务监督与联络处</div>
+                </div>
+            </a>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="导航菜单">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav>
+                <ul id="navMenu">
+                    <li><a href="index.html"><i class="fas fa-home"></i> 首页</a></li>
+                    <li><a href="origin.html"><i class="fas fa-history"></i> 组织起源</a></li>
+                    <li><a href="philosophy.html"><i class="fas fa-brain"></i> 核心理念</a></li>
+                    <li><a href="structure.html"><i class="fas fa-sitemap"></i> 组织架构</a></li>
+                    <li><a href="anomalies.html" class="active"><i class="fas fa-flask"></i> 异常项目</a></li>
+                    <li><a href="relationship.html"><i class="fas fa-balance-scale"></i> 与Solum关系</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>异常项目档案</h1>
+                <p class="tagline">根据SOL"滤网"原则分类管理的异常项目，从严格收容到开放共存</p>
+                <div class="header-accent"></div>
+            </div>
+        </section>
+        
+        <section class="anomalies-section">
+            <div class="container">
+                <div class="content-card">
+                    <h2><i class="fas fa-flask"></i> 异常项目目录</h2>
+                    <div class="text-content">
+                        <p>以下是根据SOL"滤网"原则分类管理的异常项目。点击项目名称查看详细档案。</p>
+                        
+                        <div class="info-box">
+                            <p><strong>项目状态说明：</strong></p>
+                            <ul style="margin-left: 20px; margin-top: 10px;">
+                                <li><span class="status-contained" style="padding: 0px 8px; border-radius: 4px;">已收容</span> - 具有危险性，必须严格收容</li>
+                                <li><span class="status-monitored" style="padding: 0px 8px; border-radius: 4px;">监控中</span> - 低威胁，在监控下允许存在</li>
+                                <li><span class="status-observed" style="padding: 0px 8px; border-radius: 4px;">观察中</span> - 处于评估阶段，暂未决定处理方式</li>
+                            </ul>
+                        </div>
+                        
+                        <!-- 项目分类筛选器 -->
+                        <div class="filter-controls">
+                            <h3>按状态筛选：</h3>
+                            <div class="filter-buttons">
+                                <button class="filter-btn active" data-filter="all">全部项目</button>
+                                <button class="filter-btn" data-filter="contained">已收容</button>
+                                <button class="filter-btn" data-filter="monitored">监控中</button>
+                                <button class="filter-btn" data-filter="observed">观察中</button>
+                            </div>
+                        </div>
+                        
+                        <!-- 项目列表容器 -->
+                        <div id="anomalies-list" class="anomalies-list">
+                            <div class="loading-indicator">
+                                <i class="fas fa-spinner fa-spin"></i> 正在加载异常项目档案...
+                            </div>
+                        </div>
+                        
+                        <div class="info-box">
+                            <p><strong>档案说明：</strong> 所有SOL异常项目档案均遵循标准化格式，包含项目编号、名称、威胁等级、收容状态、描述、处理措施以及相关记录。项目编号中的前缀"SOL"代表Solum SOL组织，"EX"代表实验性项目，"AR"代表档案记录。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo-section">
+                    <div class="footer-logo">
+                        <div class="logo-icon small">
+                            <img src="assets/icon.png" class="logo-image">
+                        </div>
+                        <div>
+                            <div class="logo-text">SOL</div>
+                            <div class="logo-subtitle">超常事务监督与联络处</div>
+                        </div>
+                    </div>
+                    <p class="footer-motto">最小干预，务实共存</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h3>组织信息</h3>
+                        <ul>
+                            <li><a href="index.html">首页</a></li>
+                            <li><a href="origin.html">组织起源</a></li>
+                            <li><a href="philosophy.html">核心理念</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="link-group">
+                        <h3>了解更多</h3>
+                        <ul>
+                            <li><a href="structure.html">组织架构</a></li>
+                            <li><a href="anomalies.html">异常项目</a></li>
+                            <li><a href="relationship.html">与Solum关系</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>© 2026 Solum SOL (超常事务监督与联络处)。</p>
+                </div>
+                <div class="solum-notice">
+                    <p>隶属于Solum组织 · 开放包容 · 造福人类</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 项目数据文件 -->
+    <script src="projects/projects-data.js"></script>
+    
+    <script>
+        // 移动端菜单切换
+        document.getElementById('mobileMenuBtn').addEventListener('click', function() {
+            document.getElementById('navMenu').classList.toggle('active');
+            this.setAttribute('aria-expanded', 
+                this.getAttribute('aria-expanded') === 'true' ? 'false' : 'true');
+        });
+        
+        // 点击菜单项后关闭移动菜单
+        const navLinks = document.querySelectorAll('nav a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                document.getElementById('navMenu').classList.remove('active');
+                document.getElementById('mobileMenuBtn').setAttribute('aria-expanded', 'false');
+            });
+        });
+        
+        // 异常项目筛选功能
+        document.addEventListener('DOMContentLoaded', function() {
+            // 加载异常项目
+            loadAnomalies();
+            
+            // 筛选按钮事件
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // 移除其他按钮的active状态
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    // 添加当前按钮的active状态
+                    this.classList.add('active');
+                    
+                    // 筛选项目
+                    const filter = this.getAttribute('data-filter');
+                    filterAnomalies(filter);
+                });
+            });
+        });
+        
+        function loadAnomalies() {
+            const container = document.getElementById('anomalies-list');
+            
+            // 清空加载指示器
+            container.innerHTML = '';
+            
+            // 检查是否有项目数据
+            if (typeof anomalyProjects === 'undefined' || anomalyProjects.length === 0) {
+                container.innerHTML = '<div class="no-projects">暂无异常项目档案</div>';
+                return;
+            }
+            
+            // 创建项目列表
+            let html = '';
+            
+            anomalyProjects.forEach(project => {
+                // 格式化文件名（将下划线替换为空格）
+                const displayName = project.filename.replace(/_/g, ' ').replace('.html', '');
+                
+                // 根据状态确定CSS类
+                let statusClass = '';
+                let statusText = '';
+                
+                switch(project.status) {
+                    case 'contained':
+                        statusClass = 'status-contained';
+                        statusText = '已收容';
+                        break;
+                    case 'monitored':
+                        statusClass = 'status-monitored';
+                        statusText = '监控中';
+                        break;
+                    case 'observed':
+                        statusClass = 'status-observed';
+                        statusText = '观察中';
+                        break;
+                    default:
+                        statusClass = 'status-observed';
+                        statusText = '未知状态';
+                }
+                
+                // 创建项目卡片
+                html += `
+                    <div class="anomaly-item" data-status="${project.status}">
+                        <div class="anomaly-header">
+                            <span class="anomaly-id">${project.id}</span>
+                            <span class="anomaly-status ${statusClass}">${statusText}</span>
+                        </div>
+                        <h3 class="anomaly-title">${displayName}</h3>
+                        <p class="anomaly-desc">${project.description}</p>
+                        <div class="anomaly-actions">
+                            <a href="projects/${project.filename}" class="view-btn">查看档案</a>
+                            <span class="anomaly-threat">威胁等级: ${project.threatLevel}</span>
+                        </div>
+                    </div>
+                `;
+            });
+            
+            container.innerHTML = html;
+        }
+        
+        function filterAnomalies(filter) {
+            const items = document.querySelectorAll('.anomaly-item');
+            
+            items.forEach(item => {
+                if (filter === 'all' || item.getAttribute('data-status') === filter) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>
